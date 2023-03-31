@@ -1,0 +1,101 @@
+C:\Users\lauri\eric\part12-containers-applications-main\todo-app\todo-backend>docker container ls
+CONTAINER ID   IMAGE     COMMAND                  CREATED       STATUS       PORTS                     NAMES
+dc05559000eb   mongo     "docker-entrypoint.s…"   3 hours ago   Up 3 hours   0.0.0.0:3456->27017/tcp   todo-backend-mongo-1
+
+C:\Users\lauri\eric\part12-containers-applications-main\todo-app\todo-backend>docker exec -it todo-backend-mongo-1 bash
+root@dc05559000eb:/# mongosh
+Current Mongosh Log ID: 641d4cabd4ca520b6d441bd8
+Connecting to:          mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+1.8.0
+Using MongoDB:          6.0.5
+Using Mongosh:          1.8.0
+
+For mongosh info see: https://docs.mongodb.com/mongodb-shell/
+
+test> exit
+root@dc05559000eb:/# mongosh -u root -p example
+Current Mongosh Log ID: 641d4ce416436cb2b1d44898
+Connecting to:          mongodb://<credentials>@127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+1.8.0
+Using MongoDB:          6.0.5
+Using Mongosh:          1.8.0
+
+For mongosh info see: https://docs.mongodb.com/mongodb-shell/
+
+------
+   The server generated these startup warnings when booting
+   2023-03-24T04:22:07.817+00:00: /sys/kernel/mm/transparent_hugepage/enabled is 'always'. We suggest setting it to 'never'
+   2023-03-24T04:22:07.817+00:00: vm.max_map_count is too low
+------
+
+------
+   Enable MongoDB's free cloud-based monitoring service, which will then receive and display
+   metrics about your deployment (disk utilization, CPU, operation statistics, etc).
+
+   The monitoring data will be available on a MongoDB website with a unique URL accessible to you
+   and anyone you share the URL with. MongoDB may use this information to make product
+   improvements and to suggest MongoDB products and deployment options to you.
+
+   To enable free monitoring, run the following command: db.enableFreeMonitoring()
+   To permanently disable this reminder, run the following command: db.disableFreeMonitoring()
+------
+
+test> exit
+root@dc05559000eb:/# mongosh -u root -p example
+Current Mongosh Log ID: 641d4d6f0891f594803390ff
+Connecting to:          mongodb://<credentials>@127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+1.8.0
+Using MongoDB:          6.0.5
+Using Mongosh:          1.8.0
+
+For mongosh info see: https://docs.mongodb.com/mongodb-shell/
+
+------
+   The server generated these startup warnings when booting
+   2023-03-24T04:22:07.817+00:00: /sys/kernel/mm/transparent_hugepage/enabled is 'always'. We suggest setting it to 'never'
+   2023-03-24T04:22:07.817+00:00: vm.max_map_count is too low
+------
+
+------
+   Enable MongoDB's free cloud-based monitoring service, which will then receive and display
+   metrics about your deployment (disk utilization, CPU, operation statistics, etc).
+
+   The monitoring data will be available on a MongoDB website with a unique URL accessible to you
+   and anyone you share the URL with. MongoDB may use this information to make product
+   improvements and to suggest MongoDB products and deployment options to you.
+
+   To enable free monitoring, run the following command: db.enableFreeMonitoring()
+   To permanently disable this reminder, run the following command: db.disableFreeMonitoring()
+------
+
+test> show dbs
+admin         100.00 KiB
+config         72.00 KiB
+local          72.00 KiB
+the_database   56.00 KiB
+test> use the_database
+switched to db the_database
+the_database> db.todos.insertOne( { text: "Increase the number of tools in my toolbelt", done: false } )
+{
+  acknowledged: true,
+  insertedId: ObjectId("641d4f71679901fa5a5abcf6")
+}
+the_database>
+the_database> show collections
+todos
+the_database> db.todos.find({})
+[
+  {
+    _id: ObjectId("641d254ffb1b110f53694272"),
+    text: 'Write some code',
+    done: false
+  },
+  {
+    _id: ObjectId("641d254ffb1b110f53694273"),
+    text: 'Learn about containers',
+    done: false
+  },
+  {
+    _id: ObjectId("641d4f71679901fa5a5abcf6"),
+    text: 'Increase the number of tools in my toolbelt',
+    done: false
+  }
+]
+the_database>

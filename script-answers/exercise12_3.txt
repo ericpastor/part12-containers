@@ -1,0 +1,15 @@
+Script started on 2023-03-22 08:20:50+00:00 [TERM="xterm" TTY="/dev/pts/0" COLUMNS="162" LINES="63"]
+# cd usr
+# cd src
+# cd app
+# nano index.js
+[?2004h[?1049h[22;0;0t[1;63r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[61;75H(B[0;7m[ Reading... ](B[m[61;74H(B[0;7m[ Read 2 lines ](B[m[H(B[0;7m  GNU nano 6.2 [64bindex.js [73b [1;161H(B[m
+[62d(B[0;7m^G(B[m Help[62;17H(B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut[62;65H(B[0;7m^T(B[m Execute[81G(B[0;7m^C(B[m Location     (B[0;7mM-U(B[m Undo[62;113H(B[0;7mM-A(B[m Set Mark    (B[0;7mM-](B[m To Bracket  (B[0;7mM-Q(B[m Previous
+[63d(B[0;7m^X(B[m Exit[63;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Paste[63;65H(B[0;7m^J(B[m Justify[81G(B[0;7m^/(B[m Go To Line   (B[0;7mM-E(B[m Redo[63;113H(B[0;7mM-6(B[m Copy[63;129H(B[0;7m^Q(B[m Where Was    (B[0;7mM-W(B[m Next
+[2dconsole.log((B[0;1m[35m'Hello World'[39m(B[m)
+[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[62;17H[24X[62;41H(B[0;7mM-D(B[m DOS Forma[62;65H [9b[81G(B[0;7mM-A(B[m Append[14X[62;113H [7b(B[0;7mM-B(B[m Backup File[K[63;2H(B[0;7mC(B[m Cancel[17G[24X[63;41H(B[0;7mM-M(B[m Mac Format  [63;65H [9b[81G(B[0;7mM-P(B[m Prepend [12b[63;113H [7b(B[0;7m^T(B[m Browse[K
+[61d(B[0;7mFile Name to Write: index.js [132b [61;29H(B[m[?12l[?25h[?25l(B[0;7m (B[m[?12l[?25h[?25l(B[0;7m (B[m[?12l[?25h[?25l(B[0;7m (B[m[?12l[?25h[?25l[61;74H[1K (B[0;7m[ Cancelled ](B[m[K[62;17H(B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cu[62;65H(B[0;7m^T(B[m Execute[81G(B[0;7m^C(B[m Location     (B[0;7mM-U(B[m Undo[62;113H(B[0;7mM-A(B[m Set Mark    (B[0;7mM-](B[m To Bracket  (B[0;7mM-Q(B[m Previous[63;2H(B[0;7mX(B[m Exit  [17G(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace      (B[0;7m^U(B[m Paste[63;65H(B[0;7m^J(B[m Justify[81G(B[0;7m^/(B[m Go To Line   (B[0;7mM-E(B[m Redo[63;113H(B[0;7mM-6(B[m Copy [7b(B[0;7m^Q(B[m Where Was    (B[0;7mM-W(B[m Next[?12l[?25h
+[2d[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[61d[J[63d[?12l[?25h[63;1H[?1049l[23;0;0t
+[?1l>[?2004l# exit
+
+Script done on 2023-03-22 08:24:35+00:00 [COMMAND_EXIT_CODE="0"]
